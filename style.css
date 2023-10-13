@@ -1,0 +1,129 @@
+:root {
+        --calc-body: #016179;
+      }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #030122;
+   
+}
+#container-calc{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    height: 600px;
+    width: 450px;
+    border: 3px solid black;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 50% 30px 33%;
+    background-color: var(--calc-body);
+    border-radius: 20px;
+}
+#container-digit{
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    background-color:  var(--calc-body);
+
+}
+.input{
+    border:  2px solid rgb(99, 14, 14);
+    background-color: #bae3f3;
+    height: 100px;
+    width: 400px;
+    margin: 20px;
+    border-radius: 20px;
+    z-index: 10;
+    text-align: right;
+    font-size: 40px;
+    font-family: sans-serif;
+    color: #3f246b;
+}
+#display{
+    background-color:  var(--calc-body);
+    border-radius: 20px;
+}
+
+.clear{
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    width: 400px;
+    height: 100px;
+    background-color:  var(--calc-body);
+
+}
+.btns{
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+    text-align: center;
+    border:  2px solid black;
+    font-family:sans-serif;
+    border-radius: 50px;
+    background-color: #bae3f3;
+    color: #5f5067;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+#clear , #del{
+    height: 70px;
+    width: 150px;
+    border:  2px solid black;
+}
+button:hover{
+    background-color: rgb(143, 143, 216);
+    color: black;
+}
+.operators:hover{
+    background-color: rgb(206, 128, 40);
+    color: black;
+}
+#clear:hover , #del:hover{
+    background-color: rgb(211, 117, 117);
+    color: black;
+}
+.equal:hover{
+    background-color: rgb(65, 121, 65);
+    color: black;
+}
+footer ul li {
+    color: white;
+    text-align: center;
+}
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: monospace;
+    list-style: none;
+}
+footer{
+    padding: 10px;
+}
+.fa{
+  size: 20px;
+  color: white;
+}
+.fa-github:hover{
+  color: rgb(138, 31, 138);
+}
+a 
+{
+    text-decoration: none;
+}
+a:hover{
+    font-size: 22px;
+}
